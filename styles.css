@@ -9,6 +9,9 @@ h1{
 }
 p{
   font-family: 'Biryani', sans-serif;
+  display:inline-block;
+  padding:20px;
+
 }
 .photos{
   float: left;
@@ -44,11 +47,22 @@ nav ul li{
   width: 100%;
   padding: 20px;
 }
+
+  .close-button{
+    width: 10px;
+    height:10px;
+    float:right;
+    display:inline;
+    padding:20px;
+  }
 .column1{
     display: inline-block;
     width: 40%;
     float:left
 }
+
+
+
 .item-align{
   display:inline;
 }
@@ -57,6 +71,7 @@ nav ul li{
 }
 .actHDR{
   display:inline;
+  font-family: 'Biryani', sans-serif;
 }
 .topBoxes{
   overflow: auto;
@@ -70,14 +85,23 @@ nav ul li{
     margin-bottom: 20px;
     padding: 10px;
     background-color: white;
-    width:90%
+    width:100%;
+    margin-top: 15px;
+}
+img.account-box{
+  text-align:left
+}
+p.accounts{text-align:center;
+  padding-left: 120px;
 }
 
-p.item-align{
-  text-align: center;
-}
-.whole-account-box{
-padding-top: 30px;
+.acct-type{
+  width:130px;
+  float:right;
+  margin-top: 17px;
+  margin-right: 38px;
+  font-family: 'Biryani', sans-serif;
+  text-align: right;
 }
 .budget{
   height: 100px;
@@ -88,6 +112,7 @@ padding-top: 30px;
   float: left;
   box-sizing: border-box;
   padding: 12px;
+  margin-bottom: 40px;
 }
 .budget:last-child{
   margin-right: 0px;
@@ -96,16 +121,24 @@ padding-top: 30px;
     display: inline-block;
     float: left;
     width: 50%;
-    height: 300px;
+    height: 400px;
     background-color: white;
-    padding:20px
+    padding:20px;
+    margin-top: 19px;
+    margin-left: 70px;
 }
   h2{
   display: inline;
   font-family: 'Biryani', sans-serif;
 }
-.newTransactions{
+.primary-button{
   display:inline;
+  float: right;
+  background-color: #1CA3BA;
+  height:28px;
+  border-radius: 25px;
+  color: white;
+
 }
 .transactions{
    border-collapse: collapse;
