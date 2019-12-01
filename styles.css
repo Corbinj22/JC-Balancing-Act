@@ -148,14 +148,68 @@ p.accounts{text-align:center;
   color: white;
   width:30%;
   }
-.transactions{
+.global-table{
    border-collapse: collapse;
    width: 100%;
   }
-.transactions tr{
+.global-table tr{
   border-bottom: 2px solid #CCCCCC;
   font-family: 'Biryani', sans-serif;
   }
-.transactions th{
+.global-table th{
   text-align: left;
   }
+
+/* Transactions page styling below */
+.maincontainer-transactions{
+min-height: 100vh
+}
+.transactions-table{
+  background-color:white;
+}
+.transactions-container-left{
+  display: inline-block;
+  height: 500px;
+  background-color: white;
+  width: 40%;
+  vertical-align: top;
+  margin-right: 8%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+#transactions-page-header{
+  display:inline;
+}
+#transactions-box-header{
+  text-align: center;
+  font-size: 130%;
+  width: 100%;
+  padding: 0%;
+}
+.transactions-container-right{
+  display: inline-block;
+  height: 450px;
+  width: 40%;
+  background-color: white;
+  vertical-align: top;
+
+}
+.new-transaction-form input{
+  display: block;
+  padding: 0%;
+  margin: 0 auto;
+  width: 40%;
+}
+.new-transaction-form select{
+  display: block;
+  padding: 0%;
+  margin: 0 auto;
+  width: 40%;
+}
+
+.new-transaction-form p{
+  display: block;
+  padding: 0%;
+  margin: 0 auto;
+  width: 40%;
+}
