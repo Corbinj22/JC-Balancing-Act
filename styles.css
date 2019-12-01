@@ -185,11 +185,38 @@ min-height: 100vh
   font-size: 130%;
   width: 100%;
   padding: 0%;
+  margin-bottom: 1%;
 }
+.transaction-form-top-buttons{
+  width: 90px;
+  height: 25px;
+  border-radius: 10px;
+}
+#transaction-page-top-buttons{
+        margin-left: 10%;
+}
+#transaction-page-button-margin{
+  margin-left: 10%;
+}
+#onload-transactions-button{
+  background-color: #1CA3BA;
+  color:white;
+}
+#inflow-transactions-button{
+  background-color: white;
+  color:#1CA3BA;
+}
+#outflow-transactions-button{
+  background-color: white;
+  color:#1CA3BA;
+}
+
+
+
 .transactions-container-right{
   display: inline-block;
-  height: 450px;
-  width: 40%;
+  height: 430px;
+  width: 35%;
   background-color: white;
   vertical-align: top;
 
@@ -199,12 +226,15 @@ min-height: 100vh
   padding: 0%;
   margin: 0 auto;
   width: 40%;
+
+
 }
 .new-transaction-form select{
   display: block;
   padding: 0%;
   margin: 0 auto;
   width: 40%;
+  background-color: #F5F5F5;
 }
 
 .new-transaction-form p{
@@ -212,4 +242,15 @@ min-height: 100vh
   padding: 0%;
   margin: 0 auto;
   width: 40%;
+  font-size: 12px;
+}
+.new-transaction-form button{
+  display: block;
+  margin-left: 30%;
+  margin-top: 1%;
+  border-radius: 10px;
+  width: 20%;
+  height: 25px;
+  background-color: #1CA3BA;
+  color: white;
 }

@@ -143,9 +143,11 @@ showTransactionsPage();
 function showTransactionsPage(){
 mainContainerHTML.innerHTML = `<div class="maincontainer-transactions">
   <h1 id="transactions-page-header">Transactions</h1>
-<button type="button">Click me</button>
-<button type="button">Click me</button>
-<button type="button">Click me</button>
+<span id="transaction-page-button-margin">
+<button id="onload-transactions-button" class="transaction-form-top-buttons" type="button">ALL</button>
+<button id="inflow-transactions-button" class="transaction-form-top-buttons" type="button">INFLOW</button>
+<button id="outflow-transactions-button" class="transaction-form-top-buttons" type="button">OUTFLOW</button>
+</span>
   <div class="transactions-main-container">
   <div class="transactions-container-left">
   <table class="transactions-table global-table">
@@ -255,19 +257,27 @@ mainContainerHTML.innerHTML = `<div class="maincontainer-transactions">
   </table>
 </div>
 <div class="transactions-container-right">
-  <p id="transactions-box-header">New Transactions</p>
+  <p id="transactions-box-header">New Transaction</p>
   <form class="new-transaction-form ">
-  <p>Type of Transaction</p>
+  <p>Type of Transaction:</p>
   <select name="type of transaction:">
+    <option value="expense">Expense</option>
     <option value="inflow">Inflow</option>
     <option value="outflow">Outflow</option>
   </select>
-  <p>Category</p>
+  <p>Category:</p>
   <select name="category">
+    <option value="default">-Select One-</option>
     <option value="groceries">Groceries</option>
     <option value="bills">Bills</option>
     <option value="fun money">Fun Money</option>
     <option value="paycheck">Paycheck</option>
+  </select>
+  <p>Account from:</p>
+  <select name="account from">
+    <option value="default">-Select One-</option>
+    <option value="checking">Checking</option>
+    <option value="savings">Savings</option>
   </select>
   <p>Payee:</p>
   <input type="text"></input>
@@ -275,6 +285,7 @@ mainContainerHTML.innerHTML = `<div class="maincontainer-transactions">
   <input type="text"></input>
   <p>Catergory:</p>
   <input type="text"></input>
+  <button type="button">Log Expense</button>
   </form>
 </div>
 </div>
